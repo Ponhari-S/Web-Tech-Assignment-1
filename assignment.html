@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIT-AP | Innovation Command Center</title>
+    <link rel="stylesheet" href="assignment.css">
+</head>
+<body>
+    <canvas id="bgCanvas"></canvas>
+
+    <header>
+        <div class="logo">VIT<span class="highlight">-AP</span></div>
+        <nav>
+            <a href="#innovate">Innovation</a>
+            <a href="#stats">Analytics</a>
+            <a href="registration.html" class="btn-contact">Join Hub</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1 class="glitch-text">APPLY KNOWLEDGE</h1>
+            <p class="subtitle">VIT-AP University: Apply Knowledge Improve Life.</p>
+            
+            <div class="stats-bar" id="stats">
+                <div class="stat-item">
+                    <h2 class="counter" data-target="200">0</h2>
+                    <span>Research Labs</span>
+                </div>
+                <div class="stat-item">
+                    <h2 class="counter" data-target="15000">0</h2>
+                    <span>Students</span>
+                </div>
+                <div class="stat-item">
+                    <h2 class="counter" data-target="100">0</h2>
+                    <span>Patents Filed</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="innovation-grid" id="innovate">
+            <div class="card big-card">
+                <div class="card-header">
+                    <h3>Innovation Terminal</h3>
+                    <span class="status-dot"></span>
+                </div>
+                <div class="terminal-body">
+                    <p class="t-green">> Initializing VIT-AP Neural Core...</p>
+                    <p class="t-white">> Status: <span class="t-blue">OPTIMAL</span></p>
+                    <p class="t-white">> Campus: Amaravati, India</p>
+                    <p class="t-dim">> Click any module to interface.</p>
+                </div>
+            </div>
+
+            <div class="card interact-card" onclick="window.location.href='https://vtop.vitap.ac.in/vtop/open/page'">
+                <h3>V-TOP 2.0</h3>
+                <p>The student-first digital ecosystem. Click to expand.</p>
+                <div>Uptime: 99.9% | Latency: 12ms</div>
+            </div>
+
+            <div class="card interact-card">
+                <h3>Quantum Lab</h3>
+                <p>Leading the race in cryptography and computation research.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 VIT-AP University | <span class="t-blue">Ponhari S</span></p>
+        </div>
+    </footer>
+
+    <script src="assignment.js"></script>
+</body>
+</html>

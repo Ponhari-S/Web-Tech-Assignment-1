@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Hub Registration</title>
+    <link rel="stylesheet" href="assignment.css">
+</head>
+<body>
+    <header>
+        <div class="logo">VIT<span class="highlight">-AP</span></div>
+    </header>
+
+    <main>
+        <section class="registration-form">
+            <h1>Join Hub Registration</h1>
+            <form action="/submit_registration" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="interest">Area of Interest:</label>
+                <select id="interest" name="interest">
+                    <option value="research">Research</option>
+                    <option value="innovation">Innovation</option>
+                    <option value="entrepreneurship">Entrepreneurship</option>
+                </select>
+
+                <button type="submit">Register</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 VIT-AP University | <span class="t-blue">Ponhari S</span></p>
+        </div>
+    </footer>
+</body>
+</html>
