@@ -2,7 +2,6 @@ const canvas = document.getElementById('bgCanvas');
 const ctx = canvas.getContext('2d');
 let particles = [];
 
-// Set Canvas Dimensions
 function resize() {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
@@ -10,7 +9,6 @@ function resize() {
 window.addEventListener('resize', resize);
 resize();
 
-// Mouse Glow Setup
 const glow = document.createElement('div');
 glow.className = 'cursor-glow';
 document.body.appendChild(glow);
@@ -20,7 +18,6 @@ window.addEventListener('mousemove', (e) => {
     glow.style.top = e.clientY + 'px';
 });
 
-// Particle Logic
 class Particle {
     constructor() {
         this.reset();
@@ -58,7 +55,6 @@ function init() {
 function animate() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     
-    // Draw connections
     for (let i = 0; i < particles.length; i++) {
         for (let j = i + 1; j < particles.length; j++) {
             const dx = particles[i].x - particles[j].x;
@@ -80,7 +76,6 @@ function animate() {
     requestAnimationFrame(animate);
 }
 
-// Number Counter Logic
 const counters = document.querySelectorAll('.counter');
 const startCounters = () => {
     counters.forEach(counter => {
@@ -96,8 +91,6 @@ const startCounters = () => {
         }
     });
 };
-
-// Form Validation Logic
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.querySelector('.registration-form form');
 
@@ -139,7 +132,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// Start everything
 init();
 animate();
+
 startCounters();
