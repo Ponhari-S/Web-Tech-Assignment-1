@@ -36,10 +36,8 @@ main {
     top: 0;
     left: 0;
     z-index: -1;
-    /* Removed the background property to allow the body background image to show */
 }
 
-/* Mouse Follower */
 .cursor-glow {
     position: fixed;
     width: 600px;
@@ -50,7 +48,6 @@ main {
     transform: translate(-50%, -50%);
 }
 
-/* Header & Navigation */
 header {
     display: flex;
     justify-content: space-between;
@@ -89,23 +86,21 @@ nav a:hover { color: var(--accent); }
     border-radius: 50px;
 }
 
-/* Hero Section */
 .hero {
     padding: 4rem 6%;
     text-align: center;
-    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    background: rgba(0, 0, 0, 0.6); 
     color: white;
     border-radius: 15px;
     margin: 2rem auto;
     max-width: 80%;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Added shadow for card effect */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); 
 }
 
-/* Updated the glitch-text class to enhance visibility */
 .glitch-text {
     font-size: 4rem;
     font-weight: 900;
-    background: linear-gradient(to right, #ff7f50, #f7b9a2); /* Changed gradient to a more vibrant color */
+    background: linear-gradient(to right, #ff7f50, #f7b9a2); 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 1rem;
@@ -114,21 +109,21 @@ nav a:hover { color: var(--accent); }
 
 .subtitle {
     font-size: 1.2rem;
-    color: #e0e0e0; /* Lightened subtitle text for better readability */
+    color: #e0e0e0; 
     margin-top: 1rem;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Added text shadow for better contrast */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); 
 }
 
 .stats-bar {
     display: flex;
     justify-content: space-around;
-    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    background: rgba(0, 0, 0, 0.6); 
     padding: 2rem;
     border-radius: 15px;
     border: 1px solid var(--border);
     margin: 2rem auto;
     max-width: 80%;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Added shadow for card effect */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); 
 }
 
 .stat-item {
@@ -149,23 +144,19 @@ nav a:hover { color: var(--accent); }
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
 
-/* Adjusted grid layout to ensure all cards fit properly */
-/* 1. Force items into a single row */
 .innovation-grid {
     display: grid;
-    /* This creates exactly 3 equal columns */
     grid-template-columns: repeat(3, 1fr); 
     gap: 2rem;
     padding: 2rem 5%;
-    align-items: stretch; /* Ensures cards stretch to the same height */
+    align-items: stretch; 
     max-width: 1200px;
     margin: 0 auto;
 }
 
-/* 2. Ensure cards are identical in size */
 .card {
     width: 100%; 
-    height: 100%; /* Force all cards to fill the grid cell height */
+    height: 100%;
     background: rgba(0, 0, 0, 0.85);
     backdrop-filter: blur(10px);
     color: white;
@@ -176,14 +167,11 @@ nav a:hover { color: var(--accent); }
     cursor: pointer;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
     
-    /* Flexbox inside the card helps align internal content */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 }
 
-/* 3. Handle Mobile Responsiveness 
-   (If the screen is too small for 3 cards, they should stack) */
 @media (max-width: 900px) {
     .innovation-grid {
         grid-template-columns: 1fr;
@@ -196,10 +184,9 @@ nav a:hover { color: var(--accent); }
 .card:hover {
     transform: translateY(-10px);
     border-color: var(--primary);
-    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.5); /* Adjusted shadow for better visibility */
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.5); 
 }
 
-/* Terminal Styles */
 .terminal-body {
     background: #000;
     padding: 1.5rem;
@@ -236,14 +223,13 @@ nav a:hover { color: var(--accent); }
 }
 
 footer {
-    background: black; /* Changed footer background to black */
-    color: white; /* Ensured text is visible on black background */
+    background: black; 
+    color: white;
     padding: 2rem;
     text-align: center;
     border-top: 1px solid var(--border);
 }
 
-/* Style the registration form in vertical format */
 .registration-form {
     display: flex;
     flex-direction: column;
@@ -279,15 +265,14 @@ footer {
     font-size: 1rem;
 }
 
-/* Ensure dropdown options are visible */
 .registration-form select {
-    background: #fff; /* White background for dropdown */
-    color: #000; /* Black text for better visibility */
+    background: #fff; 
+    color: #000; 
 }
 
 .registration-form select option {
-    background: #fff; /* White background for options */
-    color: #000; /* Black text for options */
+    background: #fff; 
+    color: #000; 
 }
 
 .registration-form button {
@@ -299,4 +284,5 @@ footer {
 
 .registration-form button:hover {
     background: var(--accent);
+
 }
